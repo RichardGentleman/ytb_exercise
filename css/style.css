@@ -1,0 +1,251 @@
+:root {
+    --color-white: #FFF;
+    --color-gray--light: rgb(245, 244, 244);
+    --color-gray: rgb(182, 182, 182);
+    --color-gray--dark: rgb(99, 96, 96);
+    --color-blue--main: rgb(50, 50, 219);
+    --color-purple: rgb(92, 23, 156);
+    --color-red--main: rgb(241, 19, 19);
+    --color-black: #000;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* -----Header----- */
+/* Header Top */
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 7vw;
+    width: 93vw;
+    height: 125px;
+    background-color: var(--color-white);
+    border-bottom: solid 1px var(--color-gray);
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    margin: 5px;
+    padding: 5px;
+    border-bottom: solid 1px var(--color-gray);
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-text__main {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.logo-text__small {
+    font-size: .7rem;
+    align-self: flex-start;
+}
+
+.header-top-middle {
+    display: flex;
+    align-items: center;
+}
+.header-input {
+    height: 35px;
+    width: 500px;
+    padding-left: 20px;
+    border-radius: 2px;
+    border: solid 1px var(--color-gray);
+}
+
+.header-top-right {
+    display: flex;
+    padding-right: 20px;
+}
+
+/* Header Logos */
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    margin-left: 10px;    
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header-logo__gray {
+    align-self: stretch;
+    background-color: var(--color-gray--light);
+}
+
+.header-logo__big--red {
+    font-size: 2rem;
+    color: var(--color-red--main);
+}
+
+.logo__sign-in {
+    margin-right: 5px;
+}
+
+/* Header Buttons */
+
+.btn {
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.btn__search {
+    align-self: stretch;
+    border: solid 1px var(--color-gray);
+}
+
+.btn__sign-in {
+    color: var(--color-blue--main);
+    background-color: var(--color-white);
+    border: solid 1px var(--color-blue--main);
+    margin-left: 10px;
+}
+
+.btn__search:hover {
+    background-color: var(--color-gray);
+}
+
+/* Header Nav */
+
+.nav-block {
+    display: flex;    
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    list-style: none;    
+    margin-left: 10px;
+    padding: 2px 20px;
+    height: 30px;
+    background-color: var(--color-gray--light);
+    border: solid 1px var(--color-gray);
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: var(--color-gray);
+}
+
+.active {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: solid 1px var(--color-gray);
+}
+
+/* -----Side Bar----- */
+
+.side-bar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 7vw;
+    padding: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+}
+
+.hamburger-icon {
+    padding: 20px 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.side-bar__block {
+    padding: 0;
+}
+
+.side-bar__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px 5px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.side-bar__item:hover {
+    background-color: rgb(240, 240, 240);
+}
+.side-bar__item-icon {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* ----- Article ----- */
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    margin-left: 7vw;
+    background-color: var(--color-gray--light);
+    height: 100%;
+}
+
+.item {
+    width: 265px;
+    height: 265px;
+    margin: 20px 10px;
+    background-color: var(--color-gray--light);
+    cursor: pointer;
+}
+
+.item-img {
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+    background-image: URL("https://cdn.pixabay.com/photo/2014/08/12/00/01/santorini-416136_1280.jpg");
+}
+
+.item-content {
+    display: flex;
+    padding: 15px;
+}
+
+.user-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    border-radius: 20px;
+}
+
+.item-info {
+    margin-left: 15px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.item-text {
+    font-size: .9rem;
+    color: var(--color-gray--dark);
+}
